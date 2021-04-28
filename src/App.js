@@ -12,7 +12,7 @@ class App extends Component {
     show: true,
   };
 
-  handleShowPerson = () => {
+  handleShowProfile = () => {
     this.setState({
       ...this.state,
       show: !this.state.show,
@@ -31,7 +31,7 @@ class App extends Component {
           </div>
         )}
         <div>
-          <button onClick={this.handleShowPerson}>
+          <button onClick={this.handleShowProfile}>
             {this.state.show ? "Hide profile" : "Show profile"}
           </button>
         </div>
